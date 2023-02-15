@@ -19,7 +19,7 @@ def open_file(file):
     with open(file) as opened_file:
         # file remains open for the indentedxd lines under here
         read_file = opened_file.read()
-    stripped_file = remove_punctuation(read_file)
+    stripped_file = remove_punctuation(read_file).lower()
     # remove punctuation when it is still a string
 
     word_list = stripped_file.split()
